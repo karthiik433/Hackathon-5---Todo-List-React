@@ -1,7 +1,11 @@
 h1 {
-    color: #27aedb;
+    
     text-align: center;
     }
+
+body {
+    background: linear-gradient(to right,#2950ff,#09fd2a);
+}
     
 
 button{
@@ -9,8 +13,46 @@ button{
     text-align: center;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
-.bg-pink{
-	background-color:pink;
+.todos {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 900;
+    font-family:'Courier New', Courier, monospace;
+    justify-content: space-between;
+    margin:15px;
+    background-color: rgb(253, 236, 5);
+    border : 3px solid black;
+    padding : 10px;
+}
+.todos-save {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    justify-content: space-between;
+    margin:15px;
+    background-color: aqua;
+    border : 2px solid black;
+    padding : 10px;
+
+}
+
+.tick {
+    width:30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: green;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+.toplevel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 }
