@@ -14,7 +14,7 @@ function App()
 		  redirect: 'follow'
 		};
 		
-		fetch(`http://localhost:9990/updateDone/${todoId}`, requestOptions)
+		fetch(`https://todo-app-backend-by-karthik.herokuapp.com/updateDone/${todoId}`, requestOptions)
 		  .then(response => response.json())
 		  .then(result => console.log(result))
 		  .catch(error => console.log('error', error));
@@ -35,7 +35,7 @@ function App()
   			redirect: 'follow'
 };
 
-				fetch("http://localhost:9990/createTodo", requestOptions)
+				fetch("https://todo-app-backend-by-karthik.herokuapp.com/createTodo", requestOptions)
   				.then(response => response.json())
   				.then(result => {
 					  console.log(result)
@@ -57,7 +57,7 @@ function App()
 		  redirect: 'follow'
 		};
 		
-		fetch(`http://localhost:9990/todo/${todoId}`, requestOptions)
+		fetch(`https://todo-app-backend-by-karthik.herokuapp.com/todo/${todoId}`, requestOptions)
 		  .then(response => response.text())
 		  .then(result => console.log(result))
 		  .catch(error => console.log('error', error));
@@ -79,7 +79,7 @@ function App()
 		   redirect: 'follow'
 		 };
 		 
-		 fetch(`http://localhost:9990/todo/${todoId}`, requestOptions)
+		 fetch(`https://todo-app-backend-by-karthik.herokuapp.com/todo/${todoId}`, requestOptions)
 		   .then(response => response.text())
 		   .then(result => console.log(result))
 		   .catch(error => console.log('error', error));
@@ -92,7 +92,7 @@ function App()
   			redirect: 'follow'
 		};
 
-		fetch("http://localhost:9990/todo", requestOptions)
+		fetch("https://todo-app-backend-by-karthik.herokuapp.com/todo", requestOptions)
   		.then(response => response.json())
   		.then(result => setItems(result))
   		.catch(error => console.log('error', error));

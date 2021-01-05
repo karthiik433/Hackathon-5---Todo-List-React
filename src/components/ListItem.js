@@ -12,7 +12,7 @@ function ListItem(props)
     }
     const saveEditedItem = () =>{
         props.editHandler(editedItem,props.idx);
-        setEditMode(false);
+        setEditMode(false)
 
     }
     
